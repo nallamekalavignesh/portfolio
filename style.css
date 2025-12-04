@@ -50,22 +50,23 @@ body {
 
 /* Skills */
 .skills {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     text-align: left;
 }
 .skill {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .skill span {
     font-weight: bold;
+    font-size: 1.1rem;
 }
 .bar {
     background: #eee;
     border-radius: 5px;
     overflow: hidden;
     height: 12px;
-    margin-top: 5px;
+    margin: 5px 0;
 }
 .fill {
     background: #6a11cb;
@@ -73,8 +74,12 @@ body {
     width: 0;
     animation: fillBar 2s forwards;
 }
-@keyframes fillBar {
-    to { width: var(--width); }
+@keyframes fillBar { to { width: var(--width); } }
+small {
+    display: block;
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 5px;
 }
 
 /* Projects */
@@ -90,6 +95,7 @@ body {
     border-radius: 15px;
     width: 250px;
     transition: 0.3s;
+    text-align: center;
 }
 .project-card:hover {
     transform: translateY(-10px);
