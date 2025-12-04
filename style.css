@@ -1,26 +1,96 @@
+/* Basic setup */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-    background: #f5f5f5;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f3ff;
 }
 
-h1 {
-    color: #333;
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #6a5af9, #7366ff, #8678ff);
+    padding: 80px 20px;
     text-align: center;
+    color: white;
+    animation: fadeBg 6s infinite alternate;
 }
 
-p {
-    text-align: center;
+@keyframes fadeBg {
+    0% { background: #6a5af9; }
+    50% { background: #7366ff; }
+    100% { background: #9f8bff; }
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
     font-size: 18px;
-    color: #444;
+    margin-bottom: 20px;
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
+.btn {
     background: white;
-    padding: 25px;
+    color: #6a5af9;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ece6ff;
+}
+
+/* Sections */
+.section {
+    margin: 40px 20px;
+    padding: 20px;
+    background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    color: #6a5af9;
+}
+
+/* Skills */
+.skills span {
+    background: #6a5af9;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* Animations */
+.fade-in {
+    animation: fade 2s ease-in-out;
+}
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-up {
+    animation: slide 1.5s ease-in-out;
+}
+@keyframes slide {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Footer */
+footer {
+    background: #6a5af9;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
 }
